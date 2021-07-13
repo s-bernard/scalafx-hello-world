@@ -19,3 +19,12 @@ project/plugins/project/
 
 /.idea/
 /project/project
+
+#
+out/
+.metals/
+.bloop/
+project/metals.sbt
+.idea/
+.idea_modules/
+.vscode/
