@@ -8,6 +8,9 @@ import scalafx.scene.layout.HBox
 import scalafx.scene.paint.Color._
 import scalafx.scene.paint._
 import scalafx.scene.text.Text
+import scalafx.scene.control.Button
+import scalafx.scene.Node
+import scalafx.scene.layout.VBox
 
 object ScalaFXHelloWorld extends JFXApp3 {
   override def start(): Unit = {
@@ -22,9 +25,7 @@ object ScalaFXHelloWorld extends JFXApp3 {
             new Text {
               text = "Scala"
               style = "-fx-font: normal bold 100pt sans-serif"
-              fill = new LinearGradient(
-                endX = 0,
-                stops = Stops(Red, DarkRed))
+              fill = new LinearGradient(endX = 0, stops = Stops(Red, DarkRed))
             },
             new Text {
               text = "FX"
@@ -38,7 +39,8 @@ object ScalaFXHelloWorld extends JFXApp3 {
                 radius = 15
                 spread = 0.25
               }
-            }
+            },
+            MegaBox.get()
           )
         }
       }
