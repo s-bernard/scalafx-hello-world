@@ -40,7 +40,7 @@ object ScalaFXHelloWorld extends JFXApp3 {
                 spread = 0.25
               }
             },
-            MegaBox.get()
+            MegaBox3.get()
           )
         }
       }
