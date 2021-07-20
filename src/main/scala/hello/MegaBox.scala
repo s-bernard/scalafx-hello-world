@@ -8,11 +8,10 @@ import collection.JavaConverters.asJavaCollectionConverter
 
 object MegaBox {
   implicit class VBoxImprovements(val v: VBox) {
-      def children = v.getChildren
-      def children_=(c: Iterable[Node]) = {
-        children.setAll(c.asJavaCollection)
-      }
-
+    def children = v.getChildren
+    def children_=(c: Iterable[Node]) = {
+      children.setAll(c.asJavaCollection)
+    }
   }
 
   def get(): scalafx.scene.layout.HBox =
@@ -23,9 +22,9 @@ object MegaBox {
     jvbox.children = Seq(new Button("sisi"), new Button("sasa"))
 
     val jvbox2 = new VBox {
+      this.children = Seq(new Button("baba"))
+      this.children.add(new Button("bubu"))
       getChildren.add(new Button("bibi"))
-      // children.add(new Button("bubu"))
-      // children = Seq(new Button("baba"))
     }
 
     val hbox = new scalafx.scene.layout.HBox {
