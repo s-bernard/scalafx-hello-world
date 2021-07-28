@@ -44,6 +44,7 @@ object MegaBox3 {
     }
 
     val hbox = new scalafx.scene.layout.HBox {
+      spacing = 10
       children = Seq(
         new scalafx.scene.control.Button("tyty3") {
           text = "pouet"
@@ -53,5 +54,9 @@ object MegaBox3 {
       )
     }
 
+    val hbox2 = scalafx.scene.layout.HBox()
+    hbox2.spacing = 10
+
+    println(myMacro("toto"))
     return hbox
 }
